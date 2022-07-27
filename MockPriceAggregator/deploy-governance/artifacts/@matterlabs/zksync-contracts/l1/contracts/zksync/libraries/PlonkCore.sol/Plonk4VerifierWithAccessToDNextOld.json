@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Plonk4VerifierWithAccessToDNextOld",
+  "sourceName": "@matterlabs/zksync-contracts/l1/contracts/zksync/libraries/PlonkCore.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220f5dad389f8f9aa81830ae4f8ca7ca4669bae1fbe814a3f86d3e7b78db3a10a5764736f6c63430008040033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220f5dad389f8f9aa81830ae4f8ca7ca4669bae1fbe814a3f86d3e7b78db3a10a5764736f6c63430008040033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

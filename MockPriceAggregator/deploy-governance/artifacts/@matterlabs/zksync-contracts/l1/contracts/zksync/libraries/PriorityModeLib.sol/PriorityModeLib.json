@@ -1,0 +1,30 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "PriorityModeLib",
+  "sourceName": "@matterlabs/zksync-contracts/l1/contracts/zksync/libraries/PriorityModeLib.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "enum PriorityModeLib.Epoch",
+          "name": "subEpoch",
+          "type": "uint8"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "subEpochEndTimestamp",
+          "type": "uint128"
+        }
+      ],
+      "name": "NewPriorityModeSubEpoch",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220eabde39243e3934dbe4ee1b685d111f8eeee81520ef01ba126e57fe777ba3cf064736f6c63430008040033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220eabde39243e3934dbe4ee1b685d111f8eeee81520ef01ba126e57fe777ba3cf064736f6c63430008040033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

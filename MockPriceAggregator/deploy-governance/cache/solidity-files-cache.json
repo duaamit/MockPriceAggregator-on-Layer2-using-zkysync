@@ -1,0 +1,852 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/amitdua/Documents/Programming/SampleProjects/l2exchange/cross-chain-tutorial/deploy-governance/contracts/Governance.sol": {
+      "lastModificationDate": 1658745783608,
+      "contentHash": "116b0e9c8496adce149075bd18dda03c",
+      "sourceName": "contracts/Governance.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@matterlabs/zksync-contracts/l1/contracts/zksync/interfaces/IZkSync.sol",
+        "@matterlabs/zksync-contracts/l1/contracts/zksync/Operations.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Governance"
+      ]
+    },
+    "/Users/amitdua/Documents/Programming/SampleProjects/l2exchange/cross-chain-tutorial/deploy-governance/node_modules/@matterlabs/zksync-contracts/l1/contracts/zksync/interfaces/IZkSync.sol": {
+      "lastModificationDate": 1658745886191,
+      "contentHash": "8c0502a6dbd1545ef4eca86d40a1b347",
+      "sourceName": "@matterlabs/zksync-contracts/l1/contracts/zksync/interfaces/IZkSync.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IMailbox.sol",
+        "./IGovernance.sol",
+        "./IPriorityMode.sol",
+        "./IExecutor.sol",
+        "./IDiamondCut.sol",
+        "./IGetters.sol"
+      ],
+      "versionPragmas": [
+        "^0.8"
+      ],
+      "artifacts": [
+        "IZkSync"
+      ]
+    },
+    "/Users/amitdua/Documents/Programming/SampleProjects/l2exchange/cross-chain-tutorial/deploy-governance/node_modules/@matterlabs/zksync-contracts/l1/contracts/zksync/Operations.sol": {
+      "lastModificationDate": 1658745885730,
+      "contentHash": "55e85716f5d2aad5e1d70edda9f980a2",
+      "sourceName": "@matterlabs/zksync-contracts/l1/contracts/zksync/Operations.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/amitdua/Documents/Programming/SampleProjects/l2exchange/cross-chain-tutorial/deploy-governance/node_modules/@matterlabs/zksync-contracts/l1/contracts/zksync/interfaces/IMailbox.sol": {
+      "lastModificationDate": 1658745886191,
+      "contentHash": "21b6cf9be52a475728ac3c7b88b51f2b",
+      "sourceName": "@matterlabs/zksync-contracts/l1/contracts/zksync/interfaces/IMailbox.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Storage.sol",
+        "../Operations.sol",
+        "../../common/interfaces/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8"
+      ],
+      "artifacts": [
+        "IMailbox"
+      ]
+    },
+    "/Users/amitdua/Documents/Programming/SampleProjects/l2exchange/cross-chain-tutorial/deploy-governance/node_modules/@matterlabs/zksync-contracts/l1/contracts/zksync/interfaces/IGovernance.sol": {
+      "lastModificationDate": 1658745886191,
+      "contentHash": "c329fcf05d19e5a5ac6f5f2c7640f998",
+      "sourceName": "@matterlabs/zksync-contracts/l1/contracts/zksync/interfaces/IGovernance.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8"
+      ],
+      "artifacts": [
+        "IGovernance"
+      ]
+    },
+    "/Users/amitdua/Documents/Programming/SampleProjects/l2exchange/cross-chain-tutorial/deploy-governance/node_modules/@matterlabs/zksync-contracts/l1/contracts/zksync/interfaces/IPriorityMode.sol": {
+      "lastModificationDate": 1658745886191,
+      "contentHash": "55eb7c2e66f98875b59b6a69a8eb851b",
+      "sourceName": "@matterlabs/zksync-contracts/l1/contracts/zksync/interfaces/IPriorityMode.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Operations.sol",
+        "../libraries/PriorityModeLib.sol"
+      ],
+      "versionPragmas": [
+        "^0.8"
+      ],
+      "artifacts": [
+        "IPriorityMode"
+      ]
+    },
+    "/Users/amitdua/Documents/Programming/SampleProjects/l2exchange/cross-chain-tutorial/deploy-governance/node_modules/@matterlabs/zksync-contracts/l1/contracts/zksync/interfaces/IExecutor.sol": {
+      "lastModificationDate": 1658745886191,
+      "contentHash": "9c33385ba0d661e06819d59e37c89ba0",
+      "sourceName": "@matterlabs/zksync-contracts/l1/contracts/zksync/interfaces/IExecutor.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Operations.sol"
+      ],
+      "versionPragmas": [
+        "^0.8"
+      ],
+      "artifacts": [
+        "IExecutor"
+      ]
+    },
+    "/Users/amitdua/Documents/Programming/SampleProjects/l2exchange/cross-chain-tutorial/deploy-governance/node_modules/@matterlabs/zksync-contracts/l1/contracts/zksync/interfaces/IDiamondCut.sol": {
+      "lastModificationDate": 1658745886191,
+      "contentHash": "d079106aa2e66840c05cf2304810e6b0",
+      "sourceName": "@matterlabs/zksync-contracts/l1/contracts/zksync/interfaces/IDiamondCut.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/Diamond.sol"
+      ],
+      "versionPragmas": [
+        "^0.8"
+      ],
+      "artifacts": [
+        "IDiamondCut"
+      ]
+    },
+    "/Users/amitdua/Documents/Programming/SampleProjects/l2exchange/cross-chain-tutorial/deploy-governance/node_modules/@matterlabs/zksync-contracts/l1/contracts/zksync/interfaces/IGetters.sol": {
+      "lastModificationDate": 1658745886191,
+      "contentHash": "4713e9751ad4a1248f19456a97fe5be5",
+      "sourceName": "@matterlabs/zksync-contracts/l1/contracts/zksync/interfaces/IGetters.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8"
+      ],
+      "artifacts": [
+        "IGetters"
+      ]
+    },
+    "/Users/amitdua/Documents/Programming/SampleProjects/l2exchange/cross-chain-tutorial/deploy-governance/node_modules/@matterlabs/zksync-contracts/l1/contracts/zksync/Storage.sol": {
+      "lastModificationDate": 1658745885730,
+      "contentHash": "7bd239457b2fadfb37e18524001c8133",
+      "sourceName": "@matterlabs/zksync-contracts/l1/contracts/zksync/Storage.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./libraries/Auction.sol",
+        "./Operations.sol",
+        "./libraries/PriorityQueue.sol",
+        "./libraries/PriorityModeLib.sol",
+        "./libraries/CheckpointedPrefixSum.sol",
+        "./Verifier.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/amitdua/Documents/Programming/SampleProjects/l2exchange/cross-chain-tutorial/deploy-governance/node_modules/@matterlabs/zksync-contracts/l1/contracts/common/interfaces/IERC20.sol": {
+      "lastModificationDate": 1658745886192,
+      "contentHash": "8355e3e39e63bb15f6bc6967057e4b01",
+      "sourceName": "@matterlabs/zksync-contracts/l1/contracts/common/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/amitdua/Documents/Programming/SampleProjects/l2exchange/cross-chain-tutorial/deploy-governance/node_modules/@matterlabs/zksync-contracts/l1/contracts/zksync/libraries/Auction.sol": {
+      "lastModificationDate": 1658745886191,
+      "contentHash": "07105188fb53b304ff11501f5d0d0370",
+      "sourceName": "@matterlabs/zksync-contracts/l1/contracts/zksync/libraries/Auction.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Storage.sol",
+        "../Config.sol",
+        "./WithdrawalHelper.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Auction"
+      ]
+    },
+    "/Users/amitdua/Documents/Programming/SampleProjects/l2exchange/cross-chain-tutorial/deploy-governance/node_modules/@matterlabs/zksync-contracts/l1/contracts/zksync/libraries/PriorityQueue.sol": {
+      "lastModificationDate": 1658745886192,
+      "contentHash": "e1c24ed5e3673c35e710404f344e8883",
+      "sourceName": "@matterlabs/zksync-contracts/l1/contracts/zksync/libraries/PriorityQueue.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Operations.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "DequeLibrary",
+        "HeapLibrary",
+        "PriorityQueue"
+      ]
+    },
+    "/Users/amitdua/Documents/Programming/SampleProjects/l2exchange/cross-chain-tutorial/deploy-governance/node_modules/@matterlabs/zksync-contracts/l1/contracts/zksync/libraries/PriorityModeLib.sol": {
+      "lastModificationDate": 1658745886191,
+      "contentHash": "66ed5ae661e9b04bd6586cdfd337f255",
+      "sourceName": "@matterlabs/zksync-contracts/l1/contracts/zksync/libraries/PriorityModeLib.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/CheckpointedPrefixSum.sol",
+        "../libraries/PriorityQueue.sol",
+        "../Operations.sol",
+        "../libraries/Auction.sol",
+        "../libraries/Utils.sol",
+        "../Storage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PriorityModeLib"
+      ]
+    },
+    "/Users/amitdua/Documents/Programming/SampleProjects/l2exchange/cross-chain-tutorial/deploy-governance/node_modules/@matterlabs/zksync-contracts/l1/contracts/zksync/libraries/CheckpointedPrefixSum.sol": {
+      "lastModificationDate": 1658745886191,
+      "contentHash": "ddee2694d0fcb2a4052b4c536569276a",
+      "sourceName": "@matterlabs/zksync-contracts/l1/contracts/zksync/libraries/CheckpointedPrefixSum.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CheckpointedPrefixSum"
+      ]
+    },
+    "/Users/amitdua/Documents/Programming/SampleProjects/l2exchange/cross-chain-tutorial/deploy-governance/node_modules/@matterlabs/zksync-contracts/l1/contracts/zksync/Verifier.sol": {
+      "lastModificationDate": 1658745885730,
+      "contentHash": "9832c20f1224aa83d24a988eb23e6035",
+      "sourceName": "@matterlabs/zksync-contracts/l1/contracts/zksync/Verifier.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./KeysWithPlonkVerifier.sol",
+        "./Config.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Verifier"
+      ]
+    },
+    "/Users/amitdua/Documents/Programming/SampleProjects/l2exchange/cross-chain-tutorial/deploy-governance/node_modules/@matterlabs/zksync-contracts/l1/contracts/zksync/Config.sol": {
+      "lastModificationDate": 1658745885730,
+      "contentHash": "f3f363ba835071df4209ac458023bb5d",
+      "sourceName": "@matterlabs/zksync-contracts/l1/contracts/zksync/Config.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/amitdua/Documents/Programming/SampleProjects/l2exchange/cross-chain-tutorial/deploy-governance/node_modules/@matterlabs/zksync-contracts/l1/contracts/zksync/libraries/WithdrawalHelper.sol": {
+      "lastModificationDate": 1658745886192,
+      "contentHash": "bc0b9757d8c401dd8aa8b5bcaca7382f",
+      "sourceName": "@matterlabs/zksync-contracts/l1/contracts/zksync/libraries/WithdrawalHelper.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../common/interfaces/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "WithdrawalHelper"
+      ]
+    },
+    "/Users/amitdua/Documents/Programming/SampleProjects/l2exchange/cross-chain-tutorial/deploy-governance/node_modules/@matterlabs/zksync-contracts/l1/contracts/zksync/libraries/Utils.sol": {
+      "lastModificationDate": 1658745886191,
+      "contentHash": "ebbb9963c8cf16c2e3fa63fb6619d51d",
+      "sourceName": "@matterlabs/zksync-contracts/l1/contracts/zksync/libraries/Utils.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Config.sol",
+        "../Storage.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Utils"
+      ]
+    },
+    "/Users/amitdua/Documents/Programming/SampleProjects/l2exchange/cross-chain-tutorial/deploy-governance/node_modules/@matterlabs/zksync-contracts/l1/contracts/zksync/KeysWithPlonkVerifier.sol": {
+      "lastModificationDate": 1658745885730,
+      "contentHash": "2093893bb5252fff03e18ac64bff47b1",
+      "sourceName": "@matterlabs/zksync-contracts/l1/contracts/zksync/KeysWithPlonkVerifier.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./libraries/PlonkCore.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "KeysWithPlonkVerifier",
+        "KeysWithPlonkVerifierOld"
+      ]
+    },
+    "/Users/amitdua/Documents/Programming/SampleProjects/l2exchange/cross-chain-tutorial/deploy-governance/node_modules/@matterlabs/zksync-contracts/l1/contracts/zksync/libraries/PlonkCore.sol": {
+      "lastModificationDate": 1658745886192,
+      "contentHash": "55d9cfa589a4d3034b421447cb7caf93",
+      "sourceName": "@matterlabs/zksync-contracts/l1/contracts/zksync/libraries/PlonkCore.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PairingsBn254",
+        "Plonk4VerifierWithAccessToDNext",
+        "Plonk4VerifierWithAccessToDNextOld",
+        "TranscriptLibrary",
+        "VerifierWithDeserialize",
+        "VerifierWithDeserializeOld"
+      ]
+    },
+    "/Users/amitdua/Documents/Programming/SampleProjects/l2exchange/cross-chain-tutorial/deploy-governance/node_modules/@matterlabs/zksync-contracts/l1/contracts/zksync/libraries/Diamond.sol": {
+      "lastModificationDate": 1658745886191,
+      "contentHash": "df777c819db019c3255d89319aa8fd98",
+      "sourceName": "@matterlabs/zksync-contracts/l1/contracts/zksync/libraries/Diamond.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Utils.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Diamond"
+      ]
+    }
+  }
+}
