@@ -1,15 +1,15 @@
 # L2 Counter project
 
-This folder contains the hardhat project for the `Counter` L2 smart contract. It also contains scripts that are used to display the value of the counter as well as to call the governance to increment the counter's value from L1.
+This folder contains the hardhat project for the `priceAggregator` L2 smart contract. It also contains scripts that are used to display the value of the current price as well as to call the governance to update the current price from L1.
 
 ## Structure
 
-- `contracts/Counter.sol` contains the code of the counter smart contract.
-- `deploy/counter.ts` contains the script for deploying the counter smart contract on L2.
-- `scripts/counter.json` contains the ABI of the counter smart contract.
+- `contracts/priceAggregator.sol` contains the code of the priceAggregator smart contract.
+- `deploy/priceAggregator.ts` contains the script for deploying the priceAggregator smart contract on L2.
+- `scripts/priceAggregator.json` contains the ABI of the priceAggregator smart contract.
 - `scripts/governance.json` contains the ABI of the L1 governance smart contract.
-- `scripts/display-counter.ts` contains the code for displaying the counter's value.
-- `scripts/increment-counter.ts` contains the code for incrementing the counter 
+- `scripts/display-value.ts` contains the code for displaying the current price.
+- `scripts/call-latestPrice.ts` contains the code for updating the current price. 
 
 ## Usage
 
@@ -25,7 +25,7 @@ yarn
 
 2. Open `deploy/counter.ts`. 
 
-3. Replace the `<WALLET-PRIVATE-KEY>` and the `<GOVERNANCE-ADDRESS>` with the `0x`-prefixed private key of the Ethereum wallet with some ETH balance on Görli and the address of the L1 governance contract respectively
+3. Replace the `<PRIVATE-KEY>` with the `0x`-prefixed private key of the Ethereum wallet with some ETH balance on Görli.
 
 4. Run the script using the following command:
 
@@ -33,13 +33,13 @@ yarn
 yarn hardhat deploy-zksync
 ```
 
-The script will output the address of the deployed counter contract.
+The script will output the address of the deployed priceAggregator contract.
 
-### Displaying counter value
+### Displaying price value
 
 1. Open `scripts/display-value.ts`. 
 
-2. Replace `<COUNTER-ADDRESS>` with the address of the deployed counter contract.
+2. Replace `<priceAggregator-address>` with the address of yours contract address.
 
 3. Run the script using the following command
 
@@ -47,16 +47,16 @@ The script will output the address of the deployed counter contract.
 yarn ts-node ./scripts/display-value.ts
 ```
 
-### Incrementing counter
+### Updating price to Latest
 
-1. Open `scripts/increment-counter.ts`.
+1. Open `scripts/call-latestPrice.ts`.
 
-2. Replace `WALLET-PRIVATE-KEY`, `<GOVERNANCE-ADDRESS>`, and `COUNTER-ADDRESS` with the `0x`-prefixed private key of the Ethereum wallet that deployed the governance contract, the address of the L1 governance contract, and the address of the counter contract respectively.
+2. Replace `PRIVATE-KEY`, `<GOVERNANCE-ADDRESS>`, and `priceAggregator-ADDRESS` with the `0x`-prefixed private key of the Ethereum wallet that deployed the governance contract, the address of the L1 governance contract, and the address of the priceAggregator contract respectively.
 
 3. Run the script using the following command:
 
 ```
-yarn ts-node ./scripts/increment-counter.ts
+yarn ts-node ./scripts/call-latestPrice.ts
 ```
 
-If successful, it will show the hash of the L2 transaction which corresponds to the `Execute` call on L2 that updated the value.
+If successful, it will show the hash of the L2 transaction which corresponds to the `Execute` call on L2 that updated the price.
