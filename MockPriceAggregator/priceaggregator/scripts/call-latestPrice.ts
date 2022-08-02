@@ -12,7 +12,7 @@ async function main() {
 
   // Governor wallet
   const wallet = new Wallet(
-    "0x9f0593f55edf5efd770092129cdfca54c56dbeb578f7cba9a85773bcf38de961",
+    "PrivateKey",
     l1Provider
   );
 
