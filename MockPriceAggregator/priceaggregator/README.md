@@ -1,4 +1,4 @@
-# L2 Counter project
+# L2 PriceAggregator project
 
 This folder contains the hardhat project for the `priceAggregator` L2 smart contract. It also contains scripts that are used to display the value of the current price as well as to call the governance to update the current price from L1.
 
